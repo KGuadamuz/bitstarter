@@ -6,7 +6,7 @@ app.get('/', function(request, response) {
   response.send());
 });
 
-var response.send = fs.readFile('./index.hmtl', function read(err, data) {
+response.send = fs.readFile('./index.hmtl', function read(err, data) {
 
 if (err) {
 
