@@ -4,12 +4,7 @@ var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
 
-request.on("end", function () {
-  
-fs.readFile('./index.hmtl', 'utf-8', function (error, data) {
-
-response.writeHead(200. {
-'content-Type': 'text/plain'
+response.send('data');
 
 });
 
