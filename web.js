@@ -3,10 +3,10 @@ var express = require('express');
 var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
-  response.send());
+  response.send(data));
 });
 
-response.send = fs.readFile('./index.hmtl', function read(err, data) {
+fs.readFile('./index.hmtl', function read(err, data) {
 
 if (err) {
 
