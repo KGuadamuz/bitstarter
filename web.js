@@ -3,6 +3,8 @@ var express = require('express');
 var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
+
+request.on("end", function () {
   
 fs.readFile('./index.hmtl', 'utf-8', function (error, data) {
 
