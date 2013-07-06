@@ -13,6 +13,16 @@ if (err) {
 throw err;
 }
 
+content = data;
+
+console.log(content);
+processFile();
+});
+
+function processFile() {
+sonsole.log(content);
+}
+
 
 var port = process.env.PORT || 5000;
 app.listen(port, function() {
