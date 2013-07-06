@@ -4,7 +4,9 @@ var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
 
-response.send('data');
+var response = require('fs');
+var data = fs.readFileSync("foo.txt", "utf8");
+
 
 });
 
